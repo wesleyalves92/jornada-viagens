@@ -8,6 +8,7 @@
 :root {
   --primary-color: #8f0101;
   --secondary-color: #b81515;
+
   --background-primary-color: #ffffff;
   --background-secondary-color: #f5f5f5;
   --background-tertiary-color: #000000;
@@ -19,7 +20,7 @@
   --text-weight: 400;
   --menu-text-weight: 500;
 }
-/* CSS RESET */
+
 body,
 img,
 h1,
@@ -35,22 +36,35 @@ button {
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
-  font-family: "Montserrat";
-  font-weight: var(--title-weight);
-  color: var(--primary-color);
-  color: var(--primary-color);
-}
+
 body {
   font-family: "Montserrat";
   color: var(--text-primary-color);
 }
+
+section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+section.hero,
+section.bottom-hero {
+  width: 100%;
+  margin: 0;
+}
+
+.section-title {
+  width: 280px;
+  margin: 0 auto 32px;
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
 }
+
 .section-title hr {
   width: 180px;
   height: 4px;
@@ -58,30 +72,108 @@ body {
   border: none;
   margin: 16px auto 32px;
 }
+
+.content-title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0 0 24px;
+}
+
+.content-text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+
 .button {
-  width: 280px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
-  font-weight: var(--text-weight);
+  font-weight: var(--title-weight);
   font-size: 20px;
   background-color: var(--secondary-color);
   border-radius: 16px;
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 
+.destinations .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+
+.destinations .item.tokyo .img-item {
+  background: url(../img/tokyo-mobile.jpg);
+  background-size: cover;
+}
+
+.destinations .item.osaka .img-item {
+  background: url(../img/osaka-mobile.jpg);
+  background-size: cover;
+}
+
+.destinations .item header h3 {
+  margin: 24px 0;
+}
+
+.destinations .item p {
+  margin-bottom: 24px;
+}
+
+.destinations .button {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
+  section {
+    width: 648px;
+  }
+  .section-title {
+    width: 100%;
+  }
   .section-title h2 {
     font-size: 32px;
   }
+  .destinations .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
+  .destinations .item.tokyo .img-item {
+    background: url(../img/tokyo-tablet-desk.jpg);
+    background-size: cover;
+  }
+  .destinations .item.osaka .img-item {
+    background: url(../img/osaka-tablet-desk.jpg);
+    background-size: cover;
+  }
+  .destinations .button {
+    width: 280px;
+  }
 }
-
 
 @media screen and (min-width: 1024px) {
-.button:hover {
-  background-color: var(--primary-color);
+  section {
+    width: 900px;
+  }
+  .button:hover {
+    background-color: var(--primary-color);
+  }
 }
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
+  }
+  .destination-items {
+    flex-direction: row;
+  }
 }
