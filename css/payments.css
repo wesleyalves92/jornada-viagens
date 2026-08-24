@@ -6,54 +6,54 @@
   margin-top: 24px;
   width: 100%;
 }
-.payments .content-conteiner {
+.payments .content-container {
   display: flex;
   flex-direction: column;
   
 }
-.payments .content-conteiner .image-gallery .image.bag {
+.payments .content-container .image-gallery .image.bag {
   background: url("../img/first-mobile.png") no-repeat;
   background-size: cover;
 }
-.payments .content-conteiner .image-gallery .image.pasaport {
+.payments .content-container .image-gallery .image.pasaport {
   background: url("../img/second-mobile.png") no-repeat;
   background-size: cover;
 }
-.payments .content-conteiner .image-gallery .image.people {
+.payments .content-container .image-gallery .image.people {
   background: url("../img/thirdy-mobile.png") no-repeat;
   background-size: cover;
 }
-.payments .content-conteiner .image-gallery .image.colspan-2 {
+.payments .content-container .image-gallery .image.colspan-2 {
   grid-column: span 2;
 }
 
 @media screen and (min-width: 768px) {
-  .payments .content-conteiner .image-gallery .image.bag {
+  .payments .content-container .image-gallery .image.bag {
     background: url("../img/first-tablet.png") no-repeat;
     background-size: cover;
   }
-  .payments .content-conteiner .image-gallery .image.pasaport {
+  .payments .content-container .image-gallery .image.pasaport {
     background: url("../img/second-tablet.png") no-repeat;
     background-size: cover;
   }
-  .payments .content-conteiner .image-gallery .image.people {
+  .payments .content-container .image-gallery .image.people {
     background: url("../img/thirdy-tablet.png") no-repeat;
     background-size: cover;
   }
-  .payments .content-conteiner .image-gallery .image.colspan-2 {
+  .payments .content-container .image-gallery .image.colspan-2 {
     grid-column: span 2;
   }
 }
 @media screen and (min-width:1440px) {
-  .payments .content-conteiner  {
+  .payments .content-container  {
     justify-content: space-between;
     flex-direction: row;
   }
-    .payments .content-conteiner .text-content {
+    .payments .content-container .text-content {
     width: 360px;
   }
 
-  .payments .content-conteiner .image-gallery {
+  .payments .content-container .image-gallery {
     width: 790px;
   }
 }
