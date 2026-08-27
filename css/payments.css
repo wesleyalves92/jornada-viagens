@@ -57,3 +57,15 @@
     width: 790px;
   }
 }
+.travel-packages.payments .content-container .image-gallery .image.first {
+  background: url(../img/travel-packages/gallery1-mobile.png) no-repeat;
+  background-size: cover;
+}
+.travel-packages.payments .content-container .image-gallery .image.second {
+  background: url(../img/travel-packages/gallery2-mobile.png) no-repeat;
+  background-size: cover;
+}
+.travel-packages.payments .content-container .image-gallery .image.thirdy {
+  background: url(../img/travel-packages/gallery3-mobile.png) no-repeat;
+  background-size: cover;
+}
