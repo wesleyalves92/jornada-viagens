@@ -33,6 +33,9 @@ nav {
   display: none;
 }
 
+.list-links li a.active {
+  text-decoration: underline;
+}
 .list-links {
   list-style: none;
   font-family: "Montserrat";
@@ -86,7 +89,6 @@ nav {
   }
   .navigation-menu a:hover {
     color: var(--primary-color);
-    
   }
 }
 @media screen and (min-width: 1920px) {
